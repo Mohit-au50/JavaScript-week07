@@ -1,0 +1,53 @@
+What will be the Time Complexity of these code snippet?
+Q-1) Below are nested “K” for loops
+
+n= Number(prompt("Enter the limit"));
+this statement will run O(1) times
+
+for(let i=0; i<n; i++){
+-this statement will run O(n) times because, i is dependend on the value of n
+
+    for(let j=0; j<n; i++) {
+    -this statement will run O(n) times because, j is dependend on the value of n
+
+        for(let m=0; m<n; i++) {
+        -this statement will run O(n) times because, m is depended on the value of n
+        
+            for(let z=0; z<n; i++) {
+            -this statement will run O(n) times because, z value is dpended on the value of n
+
+                console.log("Hello World");
+                -this statement will run O(1) times
+            }
+        }
+    }
+}
+In total the loop will run till O(n*n*n*n*2) (we can remove the constants)
+The nested "K" loops time complexity will be "O(n^4)" times
+
+
+Q-2) 
+N = Number(prompt("Enter the limit"));
+-this statement will run O(1) times
+
+M = Number(prompt("Enter the limit"));
+-this statement will run O(1) times
+
+a = b = 0
+-this statement will run O(1) times
+
+for(let i=0; i<N; i++){
+-this statement will run O(N) times
+
+    a = a + 1
+    -this statement will run O(1) times
+}
+
+for(let j=0; j<M; j++) {
+-this statement will run O(M) times
+
+    b = b + 1
+    -this statement will run O(1) times
+}
+In total it will run till O(N*M*5) (we can remove the constants)
+The time complexity will be "O(N*M)" times
