@@ -1,0 +1,42 @@
+What will be the Time Complexity of these code snippet?
+
+// Q - 1)
+n= Number(prompt("Enter the limit")) 
+-this statement will run O(1) times
+
+i = 1;
+-this statement will run O(1) times
+
+while(i^2 <= n) {
+-this statement will run O(n) times
+
+    console.log("Time complexity")
+    -this statement will run O(1) times
+
+    i += 1
+    -this statement will run O(1) times
+}
+In total it will run till O(n*4) (we can remove the constants)
+The time complexity will be "O(n)" times
+
+
+// Q-2) 
+n= Number(prompt("Enter the limit"));
+-this statement will run O(1) times
+
+for(let i = 0;i<n;i++){
+-this statement will run O(n) times
+
+    for(let j = 0;j<i;j++){
+    -this statement will run O(i) times
+
+        for(let k = 0;k<100;k++) {
+        -the statement will run O(1) times
+
+            console.log("Time complexity")
+            -the statement will run O(1) times
+        }
+    }
+}
+In total it will run till O(n*i*3) (we can remove the constants)
+The nested "K" loops time complexity will be "O(n^2)" times
