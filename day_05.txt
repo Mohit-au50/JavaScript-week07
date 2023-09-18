@@ -1,0 +1,25 @@
+
+n = Number(prompt("Enter the limit"))
+-this statement will run O(1) times
+
+for(let i=0; i<n; i++) {
+-this statement will run O(n) times
+
+    j = 1
+    -this statement will run O(1) times
+
+    while(j <= i^2) {
+    -this statement will run O(n^2) times
+
+        for(let k=0; k<n/2; k++) {
+        -this statement will run O(n) times
+
+            console.log("Time complexity");
+            -this statement will run O(1) times
+        } 
+        j+=1;
+        -this statement will run O(n) times
+    } 
+}
+In total it will run till O(n*n^2*n*n*3) (we can remove the constants)
+The time complexity will be "O(n^5)" times
